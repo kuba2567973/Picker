@@ -1,0 +1,519 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 42 | Scripts: 1 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.MMEENNUU
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[MMEENNUU]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.MMEENNUU.GUI
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["ZIndex"] = 100;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(95, 95, 95);
+G2L["2"]["Size"] = UDim2.new(0.60553, 0, 0.6862, 0);
+G2L["2"]["Position"] = UDim2.new(0.19682, 0, 0.15645, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[GUI]];
+G2L["2"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.MMEENNUU.GUI.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0.02, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.UIGradient
+G2L["4"] = Instance.new("UIGradient", G2L["2"]);
+G2L["4"]["Enabled"] = false;
+G2L["4"]["Rotation"] = -87;
+G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.394, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(0.443, Color3.fromRGB(0, 230, 255)),ColorSequenceKeypoint.new(0.536, Color3.fromRGB(0, 230, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 230, 255))};
+
+
+-- StarterGui.MMEENNUU.GUI.chtas
+G2L["5"] = Instance.new("TextButton", G2L["2"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["ZIndex"] = 100;
+G2L["5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5"]["BackgroundTransparency"] = 0.7;
+G2L["5"]["Size"] = UDim2.new(0.39421, 0, 0.09332, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[Chetahs]];
+G2L["5"]["Name"] = [[chtas]];
+G2L["5"]["Position"] = UDim2.new(0.78315, 0, 0.07033, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.chtas.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["5"]);
+G2L["6"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.chtas.UIStroke
+G2L["7"] = Instance.new("UIStroke", G2L["5"]);
+G2L["7"]["Transparency"] = 0.53;
+G2L["7"]["Thickness"] = 0.8;
+G2L["7"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.cusky
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["ZIndex"] = 100;
+G2L["8"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8"]["BackgroundTransparency"] = 0.7;
+G2L["8"]["Size"] = UDim2.new(0.39421, 0, 0.09332, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Custom Skys]];
+G2L["8"]["Name"] = [[cusky]];
+G2L["8"]["Position"] = UDim2.new(0.78315, 0, 0.19341, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.cusky.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+G2L["9"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.cusky.UIStroke
+G2L["a"] = Instance.new("UIStroke", G2L["8"]);
+G2L["a"]["Transparency"] = 0.53;
+G2L["a"]["Thickness"] = 0.8;
+G2L["a"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.ImageLabel
+G2L["b"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["b"]["ZIndex"] = 99;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["ImageTransparency"] = 0.3;
+G2L["b"]["Image"] = [[rbxassetid://117215275607976]];
+G2L["b"]["Size"] = UDim2.new(0.99921, 0, 1.00059, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Position"] = UDim2.new(-0, 0, -0, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.ImageLabel.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+G2L["c"]["CornerRadius"] = UDim.new(0.02, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.des
+G2L["d"] = Instance.new("Frame", G2L["2"]);
+G2L["d"]["ZIndex"] = 101;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(64, 95, 38);
+G2L["d"]["Size"] = UDim2.new(0.96214, 0, 0.27816, 0);
+G2L["d"]["Position"] = UDim2.new(0.01811, 0, 0.70117, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Name"] = [[des]];
+G2L["d"]["BackgroundTransparency"] = 0.7;
+
+
+-- StarterGui.MMEENNUU.GUI.des.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+G2L["e"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.des.UIStroke
+G2L["f"] = Instance.new("UIStroke", G2L["d"]);
+G2L["f"]["Transparency"] = 0.37;
+G2L["f"]["Thickness"] = 0.8;
+G2L["f"]["Color"] = Color3.fromRGB(150, 255, 184);
+
+
+-- StarterGui.MMEENNUU.GUI.des.title
+G2L["10"] = Instance.new("TextLabel", G2L["d"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Size"] = UDim2.new(0, 199, 0, 52);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[Description-]];
+G2L["10"]["Name"] = [[title]];
+G2L["10"]["Position"] = UDim2.new(0.0122, 0, 0.08671, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.des.desc
+G2L["11"] = Instance.new("TextLabel", G2L["d"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Size"] = UDim2.new(0, 513, 0, 114);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[you gotta select one]];
+G2L["11"]["Name"] = [[desc]];
+G2L["11"]["Position"] = UDim2.new(0.29014, 0, 0.08671, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.UIStroke
+G2L["12"] = Instance.new("UIStroke", G2L["2"]);
+G2L["12"]["Transparency"] = 0.37;
+G2L["12"]["Thickness"] = 0.8;
+G2L["12"]["Color"] = Color3.fromRGB(112, 254, 255);
+
+
+-- StarterGui.MMEENNUU.GUI.funktios
+G2L["13"] = Instance.new("LocalScript", G2L["2"]);
+G2L["13"]["Name"] = [[funktios]];
+
+
+-- StarterGui.MMEENNUU.GUI.ex
+G2L["14"] = Instance.new("TextButton", G2L["2"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["ZIndex"] = 102;
+G2L["14"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["14"]["BackgroundTransparency"] = 0.7;
+G2L["14"]["Size"] = UDim2.new(0.17767, 0, 0.09332, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Execute Chetahs]];
+G2L["14"]["Name"] = [[ex]];
+G2L["14"]["Visible"] = false;
+G2L["14"]["Position"] = UDim2.new(0.89142, 0, 0.65325, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.ex.UICorner
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
+G2L["15"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.ex.UIStroke
+G2L["16"] = Instance.new("UIStroke", G2L["14"]);
+G2L["16"]["Transparency"] = 0.53;
+G2L["16"]["Thickness"] = 0.8;
+G2L["16"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.ex3
+G2L["17"] = Instance.new("TextButton", G2L["2"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["ZIndex"] = 102;
+G2L["17"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["17"]["BackgroundTransparency"] = 0.7;
+G2L["17"]["Size"] = UDim2.new(0.17767, 0, 0.09332, 0);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Execute CustomSkys]];
+G2L["17"]["Name"] = [[ex3]];
+G2L["17"]["Visible"] = false;
+G2L["17"]["Position"] = UDim2.new(0.89142, 0, 0.65325, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.ex3.UICorner
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
+G2L["18"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.ex3.UIStroke
+G2L["19"] = Instance.new("UIStroke", G2L["17"]);
+G2L["19"]["Transparency"] = 0.53;
+G2L["19"]["Thickness"] = 0.8;
+G2L["19"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.lt2
+G2L["1a"] = Instance.new("TextButton", G2L["2"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["ZIndex"] = 100;
+G2L["1a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1a"]["BackgroundTransparency"] = 0.7;
+G2L["1a"]["Size"] = UDim2.new(0.39421, 0, 0.09332, 0);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Lumber Tycoon 2]];
+G2L["1a"]["Name"] = [[lt2]];
+G2L["1a"]["Position"] = UDim2.new(0.78315, 0, 0.30999, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.lt2.UICorner
+G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
+G2L["1b"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.lt2.UIStroke
+G2L["1c"] = Instance.new("UIStroke", G2L["1a"]);
+G2L["1c"]["Transparency"] = 0.53;
+G2L["1c"]["Thickness"] = 0.8;
+G2L["1c"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.ex4
+G2L["1d"] = Instance.new("TextButton", G2L["2"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["ZIndex"] = 102;
+G2L["1d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["1d"]["BackgroundTransparency"] = 0.7;
+G2L["1d"]["Size"] = UDim2.new(0.17767, 0, 0.09332, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[Execute Lumber Tycoon 2]];
+G2L["1d"]["Name"] = [[ex4]];
+G2L["1d"]["Visible"] = false;
+G2L["1d"]["Position"] = UDim2.new(0.89142, 0, 0.65325, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.ex4.UICorner
+G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
+G2L["1e"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.ex4.UIStroke
+G2L["1f"] = Instance.new("UIStroke", G2L["1d"]);
+G2L["1f"]["Transparency"] = 0.53;
+G2L["1f"]["Thickness"] = 0.8;
+G2L["1f"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.cls
+G2L["20"] = Instance.new("TextButton", G2L["2"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["ZIndex"] = 100;
+G2L["20"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Size"] = UDim2.new(0.05244, 0, 0.08428, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[X]];
+G2L["20"]["Name"] = [[cls]];
+G2L["20"]["Position"] = UDim2.new(0.98404, 0, -0.00477, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.arys
+G2L["21"] = Instance.new("Frame", G2L["2"]);
+G2L["21"]["Visible"] = false;
+G2L["21"]["ZIndex"] = 101;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(47, 200, 255);
+G2L["21"]["Size"] = UDim2.new(0.53298, 0, 0.27816, 0);
+G2L["21"]["Position"] = UDim2.new(0.23335, 0, 0.36072, 0);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Name"] = [[arys]];
+G2L["21"]["BackgroundTransparency"] = 0.7;
+
+
+-- StarterGui.MMEENNUU.GUI.arys.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["21"]);
+G2L["22"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.arys.UIStroke
+G2L["23"] = Instance.new("UIStroke", G2L["21"]);
+G2L["23"]["Transparency"] = 0.37;
+G2L["23"]["Thickness"] = 0.8;
+G2L["23"]["Color"] = Color3.fromRGB(150, 255, 184);
+
+
+-- StarterGui.MMEENNUU.GUI.arys.desc
+G2L["24"] = Instance.new("TextLabel", G2L["21"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["BackgroundTransparency"] = 1;
+G2L["24"]["Size"] = UDim2.new(0.72935, 0, 0.49256, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Text"] = [[Are you sure?]];
+G2L["24"]["Name"] = [[desc]];
+G2L["24"]["Position"] = UDim2.new(0.16776, 0, -0.11479, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.arys.n
+G2L["25"] = Instance.new("TextButton", G2L["21"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(14, 255, 0);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["ZIndex"] = 100;
+G2L["25"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["25"]["BackgroundTransparency"] = 0.7;
+G2L["25"]["Size"] = UDim2.new(0.45539, 0, 0.45901, 0);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[No]];
+G2L["25"]["Name"] = [[n]];
+G2L["25"]["Position"] = UDim2.new(0.74766, 0, 0.67856, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.arys.n.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+G2L["26"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.arys.n.UIStroke
+G2L["27"] = Instance.new("UIStroke", G2L["25"]);
+G2L["27"]["Transparency"] = 0.53;
+G2L["27"]["Thickness"] = 0.8;
+G2L["27"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.arys.ys
+G2L["28"] = Instance.new("TextButton", G2L["21"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["ZIndex"] = 100;
+G2L["28"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["28"]["BackgroundTransparency"] = 0.7;
+G2L["28"]["Size"] = UDim2.new(0.45539, 0, 0.45901, 0);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[Yes]];
+G2L["28"]["Name"] = [[ys]];
+G2L["28"]["Position"] = UDim2.new(0.25327, 0, 0.67856, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.arys.ys.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["29"]["CornerRadius"] = UDim.new(0.2, 0);
+
+
+-- StarterGui.MMEENNUU.GUI.arys.ys.UIStroke
+G2L["2a"] = Instance.new("UIStroke", G2L["28"]);
+G2L["2a"]["Transparency"] = 0.53;
+G2L["2a"]["Thickness"] = 0.8;
+G2L["2a"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.MMEENNUU.GUI.funktios
+local function C_13()
+local script = G2L["13"];
+	local chtas = script.Parent.chtas
+	local cusky = script.Parent.cusky
+	local lt2 = script.Parent.lt2
+	local ex = script.Parent.ex
+	local ex3 = script.Parent.ex3
+	local ex4 = script.Parent.ex4
+	local cls = script.Parent.cls
+	local arys = script.Parent.arys
+	local desc = script.Parent.des.desc
+	local ys = arys.ys
+	local n = arys.n
+	
+	chtas.Activated:Connect(function()
+		desc.Text = "Chetahs is a universal exploit that got everything you need!"
+		ex.Visible = true
+		ex2.Visible = false
+		ex3.Visible = false
+		ex4.Visible = false
+	end)
+	
+	cusky.Activated:Connect(function()
+		desc.Text = "Custom Skys work as the name, you can have custom skys."
+		ex.Visible = false
+		ex2.Visible = false
+		ex3.Visible = true
+		ex4.Visible = false
+	end)
+	
+	lt2.Activated:Connect(function()
+		desc.Text = "This exploit is designed for a game called 'Lumber Tycoon 2', basically you can spawn wood, and many more."
+		ex.Visible = false
+		ex2.Visible = false
+		ex3.Visible = false
+		ex4.Visible = true
+	end)
+	
+	cls.Activated:Connect(function()
+		arys.Visible = true
+	end)
+	
+	n.Activated:Connect(function()
+		arys.Visible = false
+	end)
+	
+	ys.Activated:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+	
+	ex.Activated:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kuba2567973/free-mouse-version-together/refs/heads/main/this%20is%20it%20bro"))() 
+	end)
+	
+	ex3.Activated:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kuba2567973/CustomSkys/refs/heads/main/CustomSkys"))()
+	end)
+	
+	ex4.Activated:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0"))()
+	end)
+end;
+task.spawn(C_13);
+
+return G2L["1"], require;
