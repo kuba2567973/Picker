@@ -461,10 +461,7 @@ local script = G2L["13"];
 	local ex3 = script.Parent.ex3
 	local ex4 = script.Parent.ex4
 	local cls = script.Parent.cls
-	local arys = script.Parent.arys
 	local desc = script.Parent.des.desc
-	local ys = arys.ys
-	local n = arys.n
 	
 	chtas.Activated:Connect(function()
 		desc.Text = "Chetahs is a universal exploit that got everything you need!"
@@ -491,15 +488,7 @@ local script = G2L["13"];
 	end)
 	
 	cls.Activated:Connect(function()
-		arys.Visible = true
-	end)
-	
-	n.Activated:Connect(function()
-		arys.Visible = false
-	end)
-	
-	ys.Activated:Connect(function()
-		script.Parent.Parent:Destroy()
+		script.Parent.Parent.Parent.MMEENNUU:Destroy()
 	end)
 	
 	ex.Activated:Connect(function()
